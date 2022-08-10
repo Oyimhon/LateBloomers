@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-size: 17px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+
+.header_logo {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  font-style: 24px;
+  cursor: pointer;
+  margin-top: 56px;
+  margin-left: 12%;
+}
+
+nav {
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+.topnav a {
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-style: 14px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main .main_wrap {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+
+main .main_wrap p {
+  color: #999999;
+  font-size: 20px;
+}
+
+main .main_wrap h1 {
+  color: #999999;
+  font-size: 44px;
+}
+
+main .main_wrap .company {
+  color: #fcac45;
+}
+
+.wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
+main .main_about {
+  display: flex;
+  padding: 100px 0;
+}
+
+.about_right {
+  margin-left: 175px;
+}
+
+.about_right h1 {
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+}
+
+.about_right p {
+  margin: 30px 0 50px 0;
+  color: #6c6c6c;
+}
+
+.about_right img {
+  width: 15px;
+  height: auto;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.mw-100 {
+  min-width: 100%;
+}
+
+.main_team {
+  background: #000;
+  align-items: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
+}
+
+.main_team h1 {
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background: #fcac45;
+  position: relative;
+  left: 45.5%;
+  margin-bottom: 105px;
+}
+
+.photo img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.team_cards {
+  display: flex;
+}
+
+.card {
+  margin: 0 20px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.position {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.about_position {
+  font-size: 14px;
+}
+
+.services_cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.main_services h1 {
+  text-align: center;
+  padding: 100px 0 30px 0;
+}
+
+.main_services p {
+  color: #6c6c6c;
+  margin-bottom: 100px;
+}
+
+.services_card h4 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.services_card img {
+  width: 60px;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 1105px) {
+  nav {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav .icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: #fff;
+    font-style: 25px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    top: 50px;
+    left: -200px;
+  }
+
+  .header .topnav.responsive {
+    height: 340px;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  main .main_wrap {
+    padding: 50px 0;
+  }
+
+  main .main_wrap p {
+    font-size: 14px;
+  }
+
+  main .main_wrap h1 {
+    font-size: 25px;
+  }
+  .mw-100 {
+    max-width: 100%;
+  }
+
+  .main-about {
+    flex-direction: column;
+  }
+
+  .about_right {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about_right li {
+    text-align: left;
+    color: #6c6c6c;
+  }
+
+  .about_right h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .team_cards {
+    flex-direction: column;
+  }
+
+  .services_cards {
+    grid-template-columns: auto;
+  }
+}
